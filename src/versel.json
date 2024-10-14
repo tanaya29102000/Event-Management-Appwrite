@@ -1,15 +1,27 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "./appwrite.js",
-            "use": "@vercel/node"
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
         }
+      }
     ],
     "routes": [
-        {
-            "src": "/appwrite(.*)",
-            "dest": "/appwrite.js"
-        }
-    ]
-}
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/index.js" 
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "env": {
+      "APPWRITE_ENDPOINT": "https://cloud.appwrite.io/v1",
+      "APPWRITE_PROJECT_ID": "670d226f002b0056ba88"
+    }
+  }
+  
