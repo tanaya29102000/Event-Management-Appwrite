@@ -1,0 +1,177 @@
+/* Main container styling */
+.show-event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f8ff, #e0e0e0); /* Soft gradient background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  /* Title styling */
+  .show-event-container h2 {
+    margin: 10px 0 20px; /* Margin-top set to 10px */
+    font-size: 2.5rem; /* Increased font size for emphasis */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Increased letter spacing */
+    color: #0072ff; /* Added color for title */
+  }
+  
+  /* Event table styling */
+  .event-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Maintain existing top margin */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevents overflow from rounded corners */
+  }
+  
+  .event-table thead {
+    background-color: #0072ff; /* Solid color for header */
+  }
+  
+  .event-table th,
+  .event-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .event-table th {
+    color: #fff;
+    font-size: 1.1rem; /* Slightly larger font size for headers */
+    text-transform: uppercase;
+  }
+  
+  .event-table tbody tr {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .event-table tbody tr:hover {
+    background-color: rgba(0, 114, 255, 0.2); /* Change hover color */
+  }
+  
+  /* Buttons in the Actions column */
+  .event-table button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+    color: #fff; /* White text color for buttons */
+  }
+  
+  /* Edit button */
+  .event-table button:first-of-type {
+    background-color: #28a745; /* Green for edit */
+  }
+  
+  .event-table button:first-of-type:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Delete button */
+  .event-table button:last-of-type {
+    background-color: #dc3545; /* Red for delete */
+  }
+  
+  .event-table button:last-of-type:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Edit form container */
+  .edit-form-container {
+    margin-top: 30px; /* Maintain existing top margin */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for emphasis */
+    width: 40%;
+    text-align: center;
+  }
+  
+  /* Edit form title */
+  .edit-form-container h3 {
+    margin: 10px 0 20px; /* Margin-top set to 10px */
+    font-size: 1.8rem; /* Increased font size */
+    text-transform: uppercase;
+    color: #0072ff; /* Added color for title */
+  }
+  
+  /* Form inputs */
+  .edit-form-container input {
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd; /* Border for input */
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(240, 240, 240, 0.9); /* Soft input background */
+    transition: border-color 0.3s; /* Smooth border color transition */
+    color: #333;
+  }
+  
+  .edit-form-container input:focus {
+    border-color: #0072ff; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.5); /* Glow effect on focus */
+  }
+  
+  /* Form buttons */
+  .edit-form-container button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+  }
+  
+  /* Submit button */
+  .edit-form-container button[type="submit"] {
+    background-color: #0072ff; /* Primary color */
+    color: #fff;
+  }
+  
+  .edit-form-container button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Cancel button */
+  .edit-form-container button[type="button"] {
+    background-color: #ff4e4e; /* Red for cancel */
+    color: #fff;
+  }
+  
+  .edit-form-container button[type="button"]:hover {
+    background-color: #ff2e2e; /* Darker red on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .event-table {
+      width: 100%;
+    }
+  
+    .edit-form-container {
+      width: 90%;
+    }
+  
+    .edit-form-container input {
+      width: 100%;
+    }
+  }
+  

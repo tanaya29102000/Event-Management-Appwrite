@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "./appwrite.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/appwrite(.*)",
+            "dest": "/appwrite.js"
+        }
+    ]
+}

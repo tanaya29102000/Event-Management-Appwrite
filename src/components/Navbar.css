@@ -1,0 +1,37 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space out logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Padding around the navbar */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.logo {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold text for the logo */
+}
+
+.nav-links {
+    display: flex; /* Flexbox for nav links */
+}
+
+.nav-button {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around each link */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for background color */
+    margin-left: 15px; /* Space between buttons */
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+.nav-button:active {
+    background-color: rgba(255, 255, 255, 0.4); /* Darker background when clicked */
+}
